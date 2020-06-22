@@ -2,6 +2,7 @@
 #define CLIENT_H
 
 #include <string>
+#include "Quote.cpp"
 using namespace std;
 
 class Client {
@@ -20,6 +21,19 @@ public:
 	bool Registered(string user);
 	string RegisterClient(char n[], char a1[], char a2[], char c[], char s[], char z[]);
 	bool Login(string user, string pass);
+	void QuoteHistory(Quote c);
+	string getName();
+	string getAdd1();
+	string getAdd2();
+	string getCity();
+	string getState();
+	string getZip();
+	void setName(char n);
+	void setAdd1(char a);
+	void setAdd2(char a);
+	void setCity(char c);
+	void setState(char s);
+	void setZip(char z);
 };
 
 #endif
