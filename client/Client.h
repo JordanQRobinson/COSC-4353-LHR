@@ -2,7 +2,7 @@
 #define CLIENT_H
 
 #include <string>
-#include "Quote.cpp"
+#include "../common/Quote.cpp"
 using namespace std;
 
 class Client {
